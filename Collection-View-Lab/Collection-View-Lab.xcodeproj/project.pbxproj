@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B34DB9B23EB1DBA00A3DE5B /* NetworkHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 6B34DB9A23EB1DBA00A3DE5B /* NetworkHelper */; };
+		6B34DB9E23EB2C4800A3DE5B /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6B34DB9D23EB2C4800A3DE5B /* ImageKit */; };
+		6B34DBA023EB34D200A3DE5B /* CountryFlagAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B34DB9F23EB34D200A3DE5B /* CountryFlagAPIClient.swift */; };
 		6B4AC5D723D3EDD0003FDC4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5D623D3EDD0003FDC4C /* AppDelegate.swift */; };
 		6B4AC5D923D3EDD0003FDC4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5D823D3EDD0003FDC4C /* SceneDelegate.swift */; };
 		6B4AC5DB23D3EDD0003FDC4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5DA23D3EDD0003FDC4C /* ViewController.swift */; };
 		6B4AC5DE23D3EDD0003FDC4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4AC5DC23D3EDD0003FDC4C /* Main.storyboard */; };
 		6B4AC5E023D3EDD3003FDC4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4AC5DF23D3EDD3003FDC4C /* Assets.xcassets */; };
 		6B4AC5E323D3EDD3003FDC4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4AC5E123D3EDD3003FDC4C /* LaunchScreen.storyboard */; };
+		6B4AC5EB23D3F300003FDC4C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5EA23D3F300003FDC4C /* DetailViewController.swift */; };
+		6B4AC5ED23D3F6DD003FDC4C /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5EC23D3F6DD003FDC4C /* CountryCell.swift */; };
+		6B4AC5EF23D3FB92003FDC4C /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5EE23D3FB92003FDC4C /* CountryAPIClient.swift */; };
+		6B4AC5F123D3FC81003FDC4C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5F023D3FC81003FDC4C /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B34DB9F23EB34D200A3DE5B /* CountryFlagAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFlagAPIClient.swift; sourceTree = "<group>"; };
 		6B4AC5D323D3EDD0003FDC4C /* Collection-View-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection-View-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4AC5D623D3EDD0003FDC4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B4AC5D823D3EDD0003FDC4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		6B4AC5DF23D3EDD3003FDC4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B4AC5E223D3EDD3003FDC4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B4AC5E423D3EDD3003FDC4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B4AC5EA23D3F300003FDC4C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6B4AC5EC23D3F6DD003FDC4C /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		6B4AC5EE23D3FB92003FDC4C /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
+		6B4AC5F023D3FC81003FDC4C /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B34DB9B23EB1DBA00A3DE5B /* NetworkHelper in Frameworks */,
+				6B34DB9E23EB2C4800A3DE5B /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +71,14 @@
 			isa = PBXGroup;
 			children = (
 				6B4AC5D623D3EDD0003FDC4C /* AppDelegate.swift */,
+				6B4AC5EA23D3F300003FDC4C /* DetailViewController.swift */,
 				6B4AC5D823D3EDD0003FDC4C /* SceneDelegate.swift */,
-				6B4AC5DA23D3EDD0003FDC4C /* ViewController.swift */,
 				6B4AC5DC23D3EDD0003FDC4C /* Main.storyboard */,
+				6B4AC5F023D3FC81003FDC4C /* Country.swift */,
+				6B4AC5DA23D3EDD0003FDC4C /* ViewController.swift */,
+				6B4AC5EE23D3FB92003FDC4C /* CountryAPIClient.swift */,
+				6B34DB9F23EB34D200A3DE5B /* CountryFlagAPIClient.swift */,
+				6B4AC5EC23D3F6DD003FDC4C /* CountryCell.swift */,
 				6B4AC5DF23D3EDD3003FDC4C /* Assets.xcassets */,
 				6B4AC5E123D3EDD3003FDC4C /* LaunchScreen.storyboard */,
 				6B4AC5E423D3EDD3003FDC4C /* Info.plist */,
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = "Collection-View-Lab";
+			packageProductDependencies = (
+				6B34DB9A23EB1DBA00A3DE5B /* NetworkHelper */,
+				6B34DB9D23EB2C4800A3DE5B /* ImageKit */,
+			);
 			productName = "Collection-View-Lab";
 			productReference = 6B4AC5D323D3EDD0003FDC4C /* Collection-View-Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,10 @@
 				Base,
 			);
 			mainGroup = 6B4AC5CA23D3EDD0003FDC4C;
+			packageReferences = (
+				6B34DB9923EB1DBA00A3DE5B /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */,
+				6B34DB9C23EB2C4800A3DE5B /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 6B4AC5D423D3EDD0003FDC4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4AC5F123D3FC81003FDC4C /* Country.swift in Sources */,
 				6B4AC5DB23D3EDD0003FDC4C /* ViewController.swift in Sources */,
 				6B4AC5D723D3EDD0003FDC4C /* AppDelegate.swift in Sources */,
+				6B4AC5EF23D3FB92003FDC4C /* CountryAPIClient.swift in Sources */,
+				6B34DBA023EB34D200A3DE5B /* CountryFlagAPIClient.swift in Sources */,
+				6B4AC5ED23D3F6DD003FDC4C /* CountryCell.swift in Sources */,
 				6B4AC5D923D3EDD0003FDC4C /* SceneDelegate.swift in Sources */,
+				6B4AC5EB23D3F300003FDC4C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B34DB9923EB1DBA00A3DE5B /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/NetworkHelperSPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+		6B34DB9C23EB2C4800A3DE5B /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B34DB9A23EB1DBA00A3DE5B /* NetworkHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B34DB9923EB1DBA00A3DE5B /* XCRemoteSwiftPackageReference "NetworkHelperSPM" */;
+			productName = NetworkHelper;
+		};
+		6B34DB9D23EB2C4800A3DE5B /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B34DB9C23EB2C4800A3DE5B /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6B4AC5CB23D3EDD0003FDC4C /* Project object */;
 }
